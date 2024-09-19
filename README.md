@@ -14,7 +14,7 @@
 
 ## Intro
 
-This is a [rocker](https://github.com/tfoote/rocker) extension for adding [lazygit](https://github.com/jesseduffield/lazygit) to a docker container.  Look at the [rocker](https://github.com/osrf/rocker) github page for more context of how [rocker](https://github.com/osrf/rocker) and [rocker](https://github.com/osrf/rocker) extensions work, but in a nutshell rocker lets you add custom capabilities to existing docker containers.    
+This is a [rocker](https://github.com/tfoote/rocker) extension for adding [lazygit](https://github.com/jesseduffield/lazygit) to a docker container.  Check out the [rocker](https://github.com/osrf/rocker) GitHub page for more details on how Rocker and its extensions work. In short, Rocker allows you to add custom capabilities to existing Docker containers.
 
 ## Installation
 
@@ -28,7 +28,7 @@ To install lazygit in a container use the `--lazygit` flag
 
 ```
 #add pixi to the ubuntu:22.04 image
-rocker --lazydocker ubuntu:22.04
+rocker --lazygit ubuntu:22.04
 
 # add lazygit to the nvidia/cuda image
 rocker --lazygit nvidia/cuda
