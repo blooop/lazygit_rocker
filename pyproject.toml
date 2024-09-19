@@ -58,7 +58,7 @@ build-backend = "hatchling.build"
 include= ["lazygit_rocker"]
 
 [project.entry-points."rocker.extensions"]
-rocker_extension = "lazygit_rocker.rocker_extension:NewRockerExtension"
+lazygit = "lazygit_rocker.lazygit_rocker:LazygitExtension"
 
 # Environments
 [tool.pixi.environments]
