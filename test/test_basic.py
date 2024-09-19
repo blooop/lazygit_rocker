@@ -5,7 +5,7 @@ from unittest.mock import patch
 from lazygit_rocker.lazygit_rocker import LazygitExtension
 
 
-class TestNewRockerExtension:
+class TestLazyGitExtension:
 
     # Instantiating PixiExtension and verifying the name attribute is set correctly
     def test_name_attribute_initialization(self):
