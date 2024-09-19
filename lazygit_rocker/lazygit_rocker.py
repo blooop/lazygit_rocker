@@ -29,10 +29,9 @@ class LazygitExtension(RockerExtension):
     #     return set(["git"])
 
     def get_snippet(self, cliargs):
-        snippet = pkgutil.get_data(
+        return pkgutil.get_data(
             "lazygit_rocker", "templates/{}_snippet.Dockerfile".format(self.name)
         ).decode("utf-8")
-        return snippet
 
     @staticmethod
     def register_arguments(parser, defaults=None):
@@ -41,6 +40,6 @@ class LazygitExtension(RockerExtension):
         parser.add_argument(
             f"--{LazygitExtension.get_name()}",
             action="store_true",
-            default=defaults.get("pixi"),
-            help="add pixi dependency manager to your environment",
+            default=defaults.get("lazygit"),
+            help="add lazygit to your environment",
         )
