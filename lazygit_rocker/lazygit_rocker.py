@@ -1,5 +1,4 @@
 import pkgutil
-import typing
 from rocker.extensions import RockerExtension
 
 
@@ -11,7 +10,7 @@ class LazygitExtension(RockerExtension):
     def __init__(self):
         self.name = LazygitExtension.get_name()
 
-    #TODO Investigate why this does not work
+    # TODO Investigate why this does not work
     # These snippets do not work as I would expect, I still need to apt install git as part of this extension for lazydocker to work
     # def invoke_after(self, cliargs) -> typing.Set[str]:
     #     """
