@@ -1,14 +1,13 @@
-# template_rocker
+# lazygit_rocker
 
 ## Continuous Integration Status
 
-[![Ci](https://github.com/blooop/template_rocker/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/blooop/template_rocker/actions/workflows/ci.yml?query=branch%3Amain)
-[![Codecov](https://codecov.io/gh/blooop/template_rocker/branch/main/graph/badge.svg?token=Y212GW1PG6)](https://codecov.io/gh/blooop/template_rocker)
-[![GitHub issues](https://img.shields.io/github/issues/blooop/template_rocker.svg)](https://GitHub.com/blooop/template_rocker/issues/)
-[![GitHub pull-requests merged](https://badgen.net/github/merged-prs/blooop/template_rocker)](https://github.com/blooop/template_rocker/pulls?q=is%3Amerged)
-[![GitHub release](https://img.shields.io/github/release/blooop/template_rocker.svg)](https://GitHub.com/blooop/template_rocker/releases/)
-[![License](https://img.shields.io/github/license/blooop/template_rocker
-)](https://opensource.org/license/mit/)
+[![Ci](https://github.com/blooop/lazygit_rocker/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/blooop/lazygit_rocker/actions/workflows/ci.yml?query=branch%3Amain)
+[![Codecov](https://codecov.io/gh/blooop/lazygit_rocker/branch/main/graph/badge.svg?token=Y212GW1PG6)](https://codecov.io/gh/blooop/lazygit_rocker)
+[![GitHub issues](https://img.shields.io/github/issues/blooop/lazygit_rocker.svg)](https://GitHub.com/blooop/lazygit_rocker/issues/)
+[![GitHub pull-requests merged](https://badgen.net/github/merged-prs/blooop/lazygit_rocker)](https://github.com/blooop/lazygit_rocker/pulls?q=is%3Amerged)
+[![GitHub release](https://img.shields.io/github/release/blooop/lazygit_rocker.svg)](https://GitHub.com/blooop/lazygit_rocker/releases/)
+[![License](https://img.shields.io/github/license/blooop/lazygit_rocker)](https://opensource.org/license/mit/)
 [![Python](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue)](https://www.python.org/downloads/)
 [![Pixi Badge](https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/prefix-dev/pixi/main/assets/badge/v0.json)](https://pixi.sh)
 
@@ -59,12 +58,12 @@ $ pixi run arbitrary_task
 
 # Adding Functionality
 
-1. Rename template_rocker/rocker_extension.py and the class inside to something more appropriate
+1. Rename lazygit_rocker/rocker_extension.py and the class inside to something more appropriate
 2. Update the extension entrypoint in `pyproject.toml` 
 
     `[project.entry-points."rocker.extensions"]`
 
-    `rocker_extension = "template_rocker.rocker_extension:NewRockerExtension"`
+    `rocker_extension = "lazygit_rocker.rocker_extension:NewRockerExtension"`
 3. Add/update the docker snippets in the templates folder.  Officially the extension is supposed to be .Dockerfile.em to indicate its passed to the empy library, but I have left them as .Dockerfile as I get Dockerfile highlighting out of the box that way. 
 4. Develop your extension.  I find that using `pip install -e .` and running the extension with rocker on my host system is the easiest way to get started.  
 

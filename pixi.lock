@@ -845,6 +845,21 @@ packages:
   requires_dist:
   - colorama>=0.4.6 ; extra == 'colors'
   requires_python: '>=3.8.0'
+- kind: pypi
+  name: lazygit-rocker
+  version: 0.0.1
+  path: .
+  sha256: b587b8417a4da408c0fe184de1ce0f29d82a52df3359050790b45757bbe718fd
+  requires_dist:
+  - rocker>=0.2.17
+  - black>=23,<=24.8.0 ; extra == 'test'
+  - pylint>=3.2.5,<=3.2.7 ; extra == 'test'
+  - pytest-cov>=4.1,<=5.0.0 ; extra == 'test'
+  - pytest>=7.4,<=8.3.3 ; extra == 'test'
+  - hypothesis>=6.104.2,<=6.112.1 ; extra == 'test'
+  - ruff>=0.5.0,<=0.6.5 ; extra == 'test'
+  - coverage>=7.5.4,<=7.6.1 ; extra == 'test'
+  editable: true
 - kind: conda
   name: ld_impl_linux-64
   version: '2.40'
@@ -1448,21 +1463,6 @@ packages:
   purls: []
   size: 859188
   timestamp: 1725353670478
-- kind: pypi
-  name: template-rocker
-  version: 0.0.1
-  path: .
-  sha256: 1996587a912048b7d5dc99e322229549656861c3cd63816d12cd464cfccf5295
-  requires_dist:
-  - rocker>=0.2.17
-  - black>=23,<=24.8.0 ; extra == 'test'
-  - pylint>=3.2.5,<=3.2.7 ; extra == 'test'
-  - pytest-cov>=4.1,<=5.0.0 ; extra == 'test'
-  - pytest>=7.4,<=8.3.3 ; extra == 'test'
-  - hypothesis>=6.104.2,<=6.112.1 ; extra == 'test'
-  - ruff>=0.5.0,<=0.6.5 ; extra == 'test'
-  - coverage>=7.5.4,<=7.6.1 ; extra == 'test'
-  editable: true
 - kind: conda
   name: tk
   version: 8.6.13
