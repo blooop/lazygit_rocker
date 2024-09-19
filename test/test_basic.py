@@ -10,13 +10,13 @@ class TestNewRockerExtension:
     # Instantiating PixiExtension and verifying the name attribute is set correctly
     def test_name_attribute_initialization(self):
         extension = LazygitExtension()
-        assert extension.name == "new_rocker_extension"
+        assert extension.name == "lazygit"
 
     def test_register_arguments(self):
         parser = argparse.ArgumentParser()
         LazygitExtension.register_arguments(parser)
         args = parser.parse_args([])
-        assert "new_rocker_extension" in vars(args)
+        assert "lazygit" in vars(args)
 
     # Handling missing template files in get_snippet method
     def test_get_snippet_missing_template(self):
