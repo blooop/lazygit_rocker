@@ -2,7 +2,7 @@
 import argparse
 import pytest
 from unittest.mock import patch
-from template_rocker.new_rocker_extension import NewRockerExtension
+from lazygit_rocker.new_rocker_extension import NewRockerExtension
 
 
 class TestNewRockerExtension:
