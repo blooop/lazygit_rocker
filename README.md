@@ -27,7 +27,7 @@ pip install lazygit-rocker
 To install lazygit in a container use the `--lazygit` flag
 
 ```
-#add pixi to the ubuntu:22.04 image
+#add lazygit to the ubuntu:22.04 image
 rocker --lazygit ubuntu:22.04
 
 # add lazygit to the nvidia/cuda image
