@@ -24,7 +24,7 @@ pip install lazygit-rocker
 
 ## Usage
 
-To install lazygit in a container use the `--lazygit` flag
+To install lazygit in an image use the `--lazygit` flag
 
 ```
 #add lazygit to the ubuntu:22.04 image
