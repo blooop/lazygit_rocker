@@ -7,7 +7,7 @@ from lazygit_rocker.lazygit_rocker import LazygitExtension
 
 class TestLazyGitExtension:
 
-    # Instantiating PixiExtension and verifying the name attribute is set correctly
+    # Instantiating new_rocker_extensionExtension and verifying the name attribute is set correctly
     def test_name_attribute_initialization(self):
         extension = LazygitExtension()
         assert extension.name == "lazygit"
